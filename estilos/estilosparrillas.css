@@ -1,0 +1,348 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-menu div ul .items a,
+.contenedor-menu a {
+    color: rgb(255, 255, 255);
+    padding: 10px 20px 10px 20px;
+}
+
+.contenedor-menu div ul .items a:hover {
+    color: rgba(245, 91, 2);
+}
+
+.contenedor-menu div ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.contenedor-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    padding: 5px 10px 5px 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0.6;
+    z-index: 2;
+}
+
+/* TITULO PRINCIPAL */
+
+.fondo {
+    text-align: center;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    background: url(../imagenes/bg-1.jpeg);
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 50% 100%, 0 90%);
+    z-index: 1;
+}
+
+.fondo h1 {
+    padding-top: 190px;
+    margin-bottom: 200px;
+    justify-content: center;
+    height: 50%;
+}
+
+.fondo a {
+    justify-content: center;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+}
+
+.ver-mas {
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 30px;
+}
+
+.ver-mas:hover {
+    color: rgb(245, 91, 2);
+}
+
+.fa-chevron-down {
+    margin-left: 5px;
+}
+
+/* LISTADO DE PRODUCTOS */
+
+.lista-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+.producto img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.producto h2 {
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.producto p {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.precio {
+    font-size: 25px;
+    color: #4CAF50;
+}
+
+/* CONTACTANOS */
+
+.contactanos {
+    margin-top: 70px;
+    max-width: 100%;
+    height: 1000px;
+    background: linear-gradient(rgba(20, 20, 20, .5), rgba(20, 20, 20, .5)), url(../imagenes/FONDO.jpeg);
+    background-position: center center;
+    background-attachment: fixed;
+    color: rgb(255, 255, 255);
+    clip-path: polygon(0 0, 100% 11%, 100% 100%, 0 90%);
+}
+
+.contenedor-titulo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contenedor-titulo h2 {
+    font-size: 50px;
+    padding-top: 60px;
+}
+
+.contenedor-titulo p {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+}
+
+.contactanos .contenedor {
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.mapa {
+    margin-top: 100px;
+    display: flex;
+    gap: 200px;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mapa iframe {
+    flex: 1;
+}
+
+/* FOOTER */
+
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 40px 0;
+}
+
+footer .contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+footer .contenedor h3 {
+    font-size: 50px;
+    padding-bottom: 60px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: #000000;
+    padding: 20px;
+    font-size: 60px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #1e90ff;
+}
+
+footer p {
+    margin: 30px 0 0;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+/* ESTILOS DEL CAMPO DE BÚSQUEDA */
+
+.contenedor-busqueda {
+    text-align: center;
+    margin: 20px;
+}
+
+.envoltura-busqueda {
+    display: inline-block;
+    position: relative;
+}
+
+#inputBusqueda {
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+#botonBusqueda {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#botonBusqueda:hover {
+    background-color: #0056b3;
+}
+
+/* INFORMACIÓN DE CONTACTO Y COPYRIGHT */
+
+.informacion-contacto {
+    background-color: #f1f1f1;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.informacion-contacto p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+/* MEDIA QUERY PARA MÓVILES */
+
+@media (max-width: 767px) {
+    header {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .contactanos {
+        margin-top: 70px;
+        height: 1450px;
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 96%);
+    }
+
+    footer {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY PARA TABLETS */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    footer {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* MEDIA QUERY PARA COMPUTADORAS */
+
+@media (min-width: 1024px) {
+    header {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    footer {
+        font-size: 15px;
+        text-align: center;
+    }
+}
